@@ -1,0 +1,20 @@
+.footer-container,
+.main aside {
+    border-top: 20px solid #00bfff;
+	text-align: center;
+margin: 0px 0px 0px 0px;
+font-family: arial, helvetica;
+font-weight: bold ;
+font-size: 11px;
+background-color: black;
+}
+
+.footer-container footer {
+    color: white;
+    padding: 20px 0;
+}
+.header-container,
+.footer-container,
+.main aside {
+    background: black;
+}

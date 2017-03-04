@@ -1,0 +1,100 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        
+        <title>Order</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/Order.css">
+    
+
+        
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="header-container">
+            <header class="wrapper clearfix">
+                <h1 style="text-shadow: 4px 4px 4px #aaa" class="title">Order</h1>
+                <nav>
+                    <ul>
+                       	
+						<li><a class="fa fa-home" style="text-shadow: 4px 4px 4px #aaa" href="index.html"> Home</a></li>
+                        <li><a class="fa fa-cloud" style="text-shadow: 4px 4px 4px #aaa"href="Order.html">Order</a></li>
+						<li><a class="glyphicon glyphicon-user" style="text-shadow: 4px 4px 4px #aaa" href="Contact.html"> Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+		
+
+        <div class="main-container" >
+            <div class="main wrapper clearfix">
+			
+		<form class="form1">
+        <fieldset>
+		<legend class="Heading1" style="color:blue"><b>Shipping Calculator</b></legend>
+			<br><a>Enter the quantity: </a>
+			<input type="text" id="x" name="Quantity"placeholder="in kgs"></input>
+            <a >&nbsp;&nbsp;&nbsp;Number of items:</a>
+			<input type="text" id="y" name="items" >  
+			<a>&nbsp;&nbsp;&nbsp;Number of Days:</a>
+        
+            <input type="radio" id="a" value="40">4 days</input>
+            <input type="radio" id="b" value="50">3 Days</input>
+            <input type="radio" id="c" value="60">2 Days</input>
+            <input type="radio" id="d" value="80">1 Day</input><br><br>
+            <a>Cost of your package: </a>
+			<input type="text" id="z" name="Quantity"placeholder="in $"></input>
+            <br><br><br>
+			<img class="img1" src="img/purchasing.png" alt="purchase_pic" style="width:30%" "height:20%" align="right">
+			
+			<br>
+            <button type="button" onclick="function1()">Get Cost</button>
+			<input type="cost" id="answer" placeholder="$ + Shipping Inc ">
+            <a id="text1"></a>
+		
+			
+            <br>
+            <br>
+				<a>Contact Information</a><br><br>
+            <input type="text" name="firstname" value="" placeholder="Name">
+            <br>
+            <br> 
+            <input type="email" value=""placeholder="Email">
+            </br>
+            </br>
+            <input type="number" value=""placeholder="Number">
+            </br>
+            </br>
+			<textarea type="message" rows="5" value=""placeholder="Shipping Address"></textarea><br><br>
+            <button style="in-line" class="button1">BUY</button> <button class="button2">Cancel</button>
+        </fieldset>
+    </form>
+	<hr>
+    <script type="text/javascript" src="js/Order.js"</script>
+<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+    $("img1").fadeIn("slow",3000);
+});
+$(document).ready(function(){
+    $("button").click(function(){
+        $("text1").html("Would you like to proceed")
+    });
+</script>
+
+</body>
+</html>
